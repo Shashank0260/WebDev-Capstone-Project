@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+/* Container (centered layout) */
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+/* Section spacing */
+.section {
+  @apply my-10 p-6 bg-white rounded-xl shadow;
+}
+
+/*  Headings */
+.heading {
+  @apply text-3xl font-bold text-black text-center mb-6;
+}
+
+/* Card design (for properties & advantages) */
+.card {
+  @apply bg-white rounded-lg shadow-md p-4 transition hover:shadow-xl;
+}
+
+/* Property image */
+.card-img {
+  @apply w-full h-48 object-cover rounded;
+}
+
+/* Buttons */
+.btn {
+  @apply bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition;
+}
+
+/* Navbar */
+.navbar {
+  @apply bg-white shadow-md py-4;
+}
+
+.nav-link {
+  @apply mx-3 text-gray-700 font-medium hover:text-blue-600 cursor-pointer;
+}
+
+/* Footer */
+.footer {
+  @apply mt-10 border-t bg-blue-900 text-white text-center py-4;
+}
+
+/*Contact Form */
+.input {
+  @apply w-full p-3 border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
